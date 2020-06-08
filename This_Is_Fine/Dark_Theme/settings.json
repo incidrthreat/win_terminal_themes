@@ -26,7 +26,7 @@
                 "colorScheme": "This-Is-Fine",
                 "tabTitle": "This Is Fine",
                 "hidden": false,
-                "backgroundImage": "ms-appdata:///Local/This_is_fine-test.gif",
+                "backgroundImage": "ms-appdata:///Local/this-is-fine.gif",
                 "padding": "10,70,10,200",
                 "backgroundImageOpacity": 0.9,
                 "backgroundImageStretchMode" : "fill",
