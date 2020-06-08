@@ -1,0 +1,81 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "initialCols" : 80,
+    "initialRows" : 40,
+
+    // If enabled, selections are automatically copied to your clipboard.
+    "copyOnSelect": false,
+
+    // If enabled, formatted data is also copied to your clipboard
+    "copyFormatting": false,
+
+    "theme":"dark",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles.
+        },
+        "list":
+        [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "colorScheme": "This-Is-Fine",
+                "tabTitle": "This Is Fine",
+                "hidden": false,
+                "backgroundImage": "ms-appdata:///Local/This_is_fine-test.gif",
+                "padding": "10,70,10,200",
+                "backgroundImageOpacity": 0.9,
+                "backgroundImageStretchMode" : "fill",
+                "cursorColor": "#cfde8b",
+                "cursorShape": "vintage",
+                "fontFace" : "Cascadia",
+                "fontSize": 10
+            }
+        ]
+    },
+
+    "schemes": [
+        {
+            "name": "This-Is-Fine",
+            "background": "#311606",
+            "foreground": "#cfde8b",
+            "selectionBackground": "#c39c00",
+            "black": "#21252b",
+            "blue": "#61afef",
+            "brightBlack": "#5f6672",
+            "brightBlue": "#007fff",
+            "brightCyan": "#05b6ad",
+            "brightGreen": "#317a00",
+            "brightPurple": "#5a00a3",
+            "brightRed": "#d74e42",
+            "brightWhite": "#d4d7d9",
+            "brightYellow": "#939454",
+            "cyan": "#4597a1",
+            "green": "#98c379",
+            "purple": "#8d36cc",
+            "red": "#e06c75",
+            "white": "#a9b2c3",
+            "yellow": "#d19a66"
+          }
+    ],
+
+    // Add custom keybindings to this array.
+    // To unbind a key combination from your defaults.json, set the command to "unbound".
+    "keybindings":
+    [
+        // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+        // These two lines additionally bind them to Ctrl+C and Ctrl+V.
+        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+        { "command": "paste", "keys": "ctrl+v" },
+
+        // Press Ctrl+Shift+F to open the search box
+        { "command": "find", "keys": "ctrl+shift+f" },
+
+        // Press Alt+Shift+D to open a new pane.
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+    ]
+}
